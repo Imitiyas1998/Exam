@@ -1,0 +1,9 @@
+springIntializer->maven,java,3.0.6,jar,17,depedency(spring web)->generate->
+file->import->maven->existingmavenProject->browse->next->
+src/main/java->com.exapmpe.name->rightclick->new class->name->
+edit code->save ->open auto created java class-> rightclick->run as->
+1-java application->web browser->localhost:8080/name/45
+
+kill port in cmd
+netstat -ona | findstr :8080 | findstr LISTENING
+taskkill /PID 2092 /F

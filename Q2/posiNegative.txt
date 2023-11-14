@@ -1,0 +1,14 @@
+public int postivenegative(int a) {
+
+        
+        if (a < 0.0)
+            {return "Negative";}
+
+        
+        else if ( number > 0.0)
+            {return "Positive";}
+
+        
+        else
+            {return "0";}
+    }

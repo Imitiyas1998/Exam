@@ -1,0 +1,38 @@
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class welcome {
+	
+	@GetMapping("/welcome")
+	public String display()
+	{
+		return"welcome Dishankan";
+	}
+	
+	@GetMapping("LecturerID/{id}")
+	public String displayId(@PathVariable("id")int LecturerID)
+	{
+		return"welcome Lecturer "+LecturerID;
+	}
+	
+	@GetMapping("/waterbill/{value}")
+	public int wateribill (@PathVariable("value")int units)
+	{
+		Integer bill=0;
+		if(units >=1 && units <=50)
+		{
+			bill=units*10;
+		}
+		else if(units >=51 && units <=100)
+		{
+			bill=(50*10)+ ((units-50)*20);
+		}
+		else if(units >=101 && units <=150)
+		{
+			bill=(50*10)+(50*20)+((units-100)*30);
+		}
+		return bill;
+	}
+}

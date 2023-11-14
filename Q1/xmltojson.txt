@@ -1,0 +1,61 @@
+{
+  "employeeInfo": {
+    "employee": [
+      {
+        "category": "Sales",
+        "employeeID": "01",
+        "name": "Walter",
+        "age": 35,
+        "city": {
+          "name": "Los Angeles",
+          "state": "California"
+        },
+        "salary": 5450
+      },
+      {
+        "category": "Research and Development",
+        "employeeID": "02",
+        "name": "Wick",
+        "age": 32,
+        "city": {
+          "name": "Austin",
+          "state": "Texas"
+        },
+        "salary": 9825
+      },
+      {
+        "category": "Production and Supply",
+        "employeeID": "03",
+        "name": "Jhon",
+        "age": 33,
+        "city": {
+          "name": "Miami",
+          "state": "Florida"
+        },
+        "salary": 7800
+      },
+      {
+        "category": "Financial",
+        "employeeID": "04",
+        "name": "Liam",
+        "age": 30,
+        "city": {
+          "name": "Nome",
+          "state": "Alaska"
+        },
+        "salary": 10825
+      },
+      {
+        "category": "Human Resource",
+        "employeeID": "05",
+        "name": "William",
+        "age": 38,
+        "city": {
+          "name": "Columbus",
+          "state": "Georgia"
+        },
+        "salary": 10100
+      }
+    ]
+  }
+}

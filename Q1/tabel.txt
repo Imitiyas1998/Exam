@@ -1,0 +1,123 @@
+<html>
+<body>
+<table border="1">
+	<tr>
+		<th>employeeID</th>
+		<th>name</th>
+		<th>age</th>
+		<th>city</th>
+		<th>salary</th>
+	</tr>
+	<tr>
+		<td id="1"></td>
+		<td id="2"></td>
+		<td id="3"></td>
+		<td id="4"></td>
+		<td id="5"></td>
+	</tr>	
+	<tr>
+		<td id="6"></td>
+		<td id="7"></td>
+		<td id="8"></td>
+		<td id="9"></td>
+		<td id="10"></td>
+	</tr>	
+	<tr>
+		<td id="11"></td>
+		<td id="12"></td>
+		<td id="13"></td>
+		<td id="14"></td>
+		<td id="15"></td>
+	</tr>
+	<tr>
+		<td id="16"></td>
+		<td id="17"></td>
+		<td id="18"></td>
+		<td id="19"></td>
+		<td id="20"></td>
+	</tr>
+	<tr>
+		<td id="21"></td>
+		<td id="22"></td>
+		<td id="23"></td>
+		<td id="24"></td>
+		<td id="25"></td>
+	</tr>
+</table>
+
+<script>
+	var text, parser, xmlDoc;
+
+	text = '<employeeInfo>' +
+		'<employee category="Sales">' +
+		'<employeeID>01</employeeID>' +
+		'<name>Walter</name>' +
+		'<age>35</age>' +
+		'<city state="California">Los Angeles</city>' +
+		'<salary>5450</salary>' +
+		'</employee>' +
+		'<employee category="Research and Development">' +
+		'<employeeID>02</employeeID>' +
+		'<name>Wick</name>' + '<age>32</age>' +
+		'<city state="Texas">Austin</city>' +
+		'<salary>9825</salary>' +
+		'</employee>' +
+		'<employee category="Production and Supply">' +
+		'<employeeID>03</employeeID>' +
+		'<name>Jhon</name>' +
+		'<age>33</age>' +
+		'<city state="Florida">Miami</city>' +
+		'<salary>7800</salary>' +
+		'</employee>' +
+		'<employee category="Financial">' +
+		'<employeeID>04</employeeID>' +
+		'<name>Liam</name>' +
+		'<age>30</age>' +
+		'<city state="Alaska">Nome</city>' +
+		'<salary>10 825</salary>' +
+		'</employee>' +
+		'<employee category="Human Resource">' +
+		'<employeeID>05</employeeID>' +
+		'<name>William</name>' +
+		'<age>38</age>' +
+		'<city state="Georgia">Columbus</city>' +
+		'<salary>10 100</salary>' +
+		'</employee>' +
+		'</employeeInfo>';
+
+	parser = new DOMParser();
+	xmlDoc = parser.parseFromString(text, 'text/xml');
+
+	// Populate the table cells individually
+	document.getElementById('1').innerHTML = xmlDoc.getElementsByTagName('employeeID')[0].textContent;
+	document.getElementById('2').innerHTML = xmlDoc.getElementsByTagName('name')[0].textContent;
+	document.getElementById('3').innerHTML = xmlDoc.getElementsByTagName('age')[0].textContent;
+	document.getElementById('4').innerHTML = xmlDoc.getElementsByTagName('city')[0].textContent;
+	document.getElementById('5').innerHTML = xmlDoc.getElementsByTagName('salary')[0].textContent;
+
+	document.getElementById('6').innerHTML = xmlDoc.getElementsByTagName('employeeID')[1].textContent;
+	document.getElementById('7').innerHTML = xmlDoc.getElementsByTagName('name')[1].textContent;
+	document.getElementById('8').innerHTML = xmlDoc.getElementsByTagName('age')[1].textContent;
+	document.getElementById('9').innerHTML = xmlDoc.getElementsByTagName('city')[1].textContent;
+	document.getElementById('10').innerHTML = xmlDoc.getElementsByTagName('salary')[1].textContent;
+
+	document.getElementById('11').innerHTML = xmlDoc.getElementsByTagName('employeeID')[2].textContent;
+	document.getElementById('12').innerHTML = xmlDoc.getElementsByTagName('name')[2].textContent;
+	document.getElementById('13').innerHTML = xmlDoc.getElementsByTagName('age')[2].textContent;
+	document.getElementById('14').innerHTML = xmlDoc.getElementsByTagName('city')[2].textContent;
+	document.getElementById('15').innerHTML = xmlDoc.getElementsByTagName('salary')[2].textContent;
+
+	document.getElementById('16').innerHTML = xmlDoc.getElementsByTagName('employeeID')[3].textContent;
+	document.getElementById('17').innerHTML = xmlDoc.getElementsByTagName('name')[3].textContent;
+	document.getElementById('18').innerHTML = xmlDoc.getElementsByTagName('age')[3].textContent;
+	document.getElementById('19').innerHTML = xmlDoc.getElementsByTagName('city')[3].textContent;
+	document.getElementById('20').innerHTML = xmlDoc.getElementsByTagName('salary')[3].textContent;
+
+	document.getElementById('21').innerHTML = xmlDoc.getElementsByTagName('employeeID')[4].textContent;
+	document.getElementById('22').innerHTML = xmlDoc.getElementsByTagName('name')[4].textContent;
+	document.getElementById('23').innerHTML = xmlDoc.getElementsByTagName('age')[4].textContent;
+	document.getElementById('24').innerHTML = xmlDoc.getElementsByTagName('city')[4].textContent;
+	document.getElementById('25').innerHTML = xmlDoc.getElementsByTagName('salary')[4].textContent;
+</script>
+</body>
+</html>

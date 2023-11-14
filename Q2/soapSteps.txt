@@ -1,0 +1,5 @@
+New->others->web->dynamicwebproject->name->finish->go to src/main/java->
+rightclick->new->pakcage->com.Q3.test->rightclickoncom->new->class->name->
+type the code->src in down->rightclick -> new->others->webservices->webservice
+start server->src->wsdl->.wsdl->rightclick->propertices->copy path->
+open Soapui->new soap project->paste path ->ok
